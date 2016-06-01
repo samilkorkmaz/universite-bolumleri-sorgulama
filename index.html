@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Üniversite Bölüm Sorgulama</title>
+</head>
+
+<!-- body onload="myvaadinproject"-->
+<body>
+	<form action="myvaadinproject">
+		<h2>2015 Taban Puanlarına Göre Üniversite Bölümleri Sorgulama</h2>
+		<table style="width: 20%">			
+			<tr>
+			<td>Puan Türü:</td>
+			<td><select name="scoreType">
+				<option value="MF-4">MF-4</option>
+				<option value="MF-3">MF-3</option>
+				<option value="MF-2">MF-2</option>
+				<option value="MF-1">MF-1</option>
+				<option value="TM-3">TM-3</option>
+				<option value="TM-2">TM-2</option>
+				<option value="TM-1">TM-1</option>
+				<option value="TS-2">TS-2</option>
+				<option value="TS-1">TS-1</option>
+				<option value="YGS-6">YGS-6</option>
+				<option value="YGS-5">YGS-5</option>
+				<option value="YGS-4">YGS-4</option>
+				<option value="YGS-3">YGS-3</option>
+				<option value="YGS-2">YGS-2</option>
+				<option value="YGS-1">YGS-1</option>
+				<option value="DİL-3">DİL-3</option>
+				<option value="DİL-2">DİL-2</option>
+				<option value="DİL-1">DİL-1</option>
+				<option value="(Açıköğretim)">Açıköğretim</option>
+			</select></td>
+			</tr>
+			<tr>
+			<td>Puan Üst Sınırı:</td>
+			<td><input type="number" name="scoreUp" min="200" max="600" step="1" value="470"></td>
+			</tr>
+			<tr>
+			<td>Puan Alt Sınırı:</td>
+			<td><input type="number" name="scoreDown" min="0" max="600" step="1" value="460"></td>
+			</tr>			
+			</table>
+			
+			</br>
+			<input type="submit" value="Sorgula...">
+			<p>Öneriler için email: <a href="mailto:samil.korkmaz@gmail.com?Subject=Üniversite%20Puan%20Hesaplama" target="_top">samil.korkmaz@gmail.com</a></p>
+	</form>
+
+	<!--
+	<script type="text/javascript">
+        function callServlet() {
+            document.location.href="myvaadinproject";
+        }
+    </script>
+	
+	<p id="demo"></p>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+		$.get('myvaadinproject', function(data) {
+			document.getElementById("demo").innerHTML = data;
+		});
+	</script>	
+	-->
+</body>
+</html>
