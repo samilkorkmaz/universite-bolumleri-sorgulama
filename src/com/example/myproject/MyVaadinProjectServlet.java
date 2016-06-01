@@ -5,7 +5,7 @@ import java.util.List;
 
 import javax.servlet.http.*;
 
-import com.example.myvaadinproject.MyvaadinprojectUI;
+import org.jsoup.Jsoup;
 
 @SuppressWarnings("serial")
 public class MyVaadinProjectServlet extends HttpServlet {
@@ -28,6 +28,11 @@ public class MyVaadinProjectServlet extends HttpServlet {
 				data = data + getHTMLLine(cp);
 			}
 		}
+		
+		String html = Jsoup.connect("http://universite-sorgulama.appspot.com/index.html").get().html();
+		resp.getWriter().println(html);
+		
+		
 		resp.getWriter().write(data); // triggers JavaScript (JQuery) inside index.html
 
 		resp.getWriter().println("<h3>Faydalý Linkler:</h3>");
