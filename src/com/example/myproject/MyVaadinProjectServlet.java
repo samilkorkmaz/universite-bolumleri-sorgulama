@@ -57,7 +57,9 @@ public class MyVaadinProjectServlet extends HttpServlet {
 
 		resp.getWriter().write(results); //triggers JavaScript (JQuery) inside index.html
 
-		resp.getWriter().println("<h3>Faydalý Linkler:</h3>");
+		resp.getWriter().println("<h3>Faydalý Linkler:</h3>");		
+		resp.getWriter().println(
+				"<a href=\"http://universitetercihleri.com/ygs-lys-tercih\">Üniversite Tercih Motoru</a></br>");
 		resp.getWriter().println(
 				"<a href=\"http://www.osym.gov.tr/belge/1-23595/2015-osys-yerlestirme-sonuclarina-iliskin-sayisal-bilgi-.html\">2015-ÖSYS Yerleþtirme Sonuçlarýna Ýliþkin Sayýsal Bilgiler</a></br>");
 		resp.getWriter()
